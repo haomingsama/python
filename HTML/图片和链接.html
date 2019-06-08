@@ -18,6 +18,21 @@
 		<a href="http：//www.baidu.com" target = 'blank'>百度一下，你就知道</a>
 		<br/>
 		<a href="另一个html.html">百度一下，你就知道</a>
+		<!--设置锚点
+			# - 表示回到顶部
+			输入#+名字- 跳转到名字的地方
+			但是在设置链接的时候需要输入名字
+			-->
+
+		<a href="#">回到顶部</a>
+		<a name="page1"> 第一集</a>
+		<a name="page2"> 第二集</a>
+		<a name="page3"> 第三集</a>
+
+		<a href="#page1">跳到了第一集位置</a>
+		<a href="#page2">跳到了第二集位置</a>
+		<a href="#page3">跳到了第三集位置</a>
+
 
 
 
@@ -43,8 +58,9 @@
 		-->	
 
 		<img src="图片路径"  border = '5px', algin = 'center'/>
-
-
+		<!--将图片设置跳转链接
+			将图片设为不要边框，美化效果-->
+		<a href="跳转地址"><img border = '0px' src="图片路径" /></a>
 	</body>
 </html>
 
