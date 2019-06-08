@@ -1,0 +1,123 @@
+<!Doctype html>
+<html>
+	<head>
+		<meta charset = 'utf-8'> <!--让网页的编码更加国际化，支持中文,出错是因为内容的编码格式和文件的编码格式不一致-->
+		
+		<!--设置关键字-->
+		<mata name = 'keywords' content = "java, web, 北京尚学堂，大数据"/>
+		<!--设置网页描述-->
+		<mata name = 'descritption' content = "北京尚学堂很不错“/>
+		<!-- 设置作者 -->
+		<mata name = 'author' content = "杨浩铭“/>
+		<!--图片和html文件放在同一个目录下#图标的添加，16*16，不要太大，将图片的后缀改成ico-->
+		<link rel = 'icon' href ='title.ico' type='image/icon'/> 
+		<!--引入css文件   文件类型- 文件位置-->
+		<link rel='stylesheet' href ="文件位置"/，type = "text/css">
+		<!--引入js文件   文件类型- 文件位置-->
+		<script type="text/javascript" src = "../js/myjs.js"></script>
+		<!--使用css样式-->
+		<style></style>	
+		
+
+
+		<title>百度一下，你就知道</title>  <!--这个标题会显示在选项卡里-->
+		
+	</head>
+	<!-- 设置背景颜色， 
+		RGB red green blue 值表示255， 0 表示没有这个颜色，255表示这个颜色是最重的
+		用16进制表示，（0-ff） 
+		百度搜索rgb 颜色对照表 查询颜色
+		可以用取色器找颜色
+		颜色： #rgb
+		黑色：#000000 = #000 要每一位是一样的，才能简写 #999 =#999999
+		红色：#ff0000
+		白色：#ffffff
+		
+		argb ： alpha rgb 可以给颜色设置透明度
+				a也是（0-ff) 也支持简写
+	-->
+
+	<!--设置背景图片
+
+		如果图片不够大，则默认会平铺图片
+		如果图片很大，多出屏幕的部分看不见
+		设置了图片就不能看到背景颜色了
+		背景颜色和图片都是不推荐使用的，因为被css代替了
+
+	-->
+	<body bgcolor = "#999" background= '图片路径' >
+		<!--设置标题-->
+		<h1>我的标题</h1>
+		<h2 align="center">我的标题</h2>
+		<h2 align="right">我的标题</h2>
+
+
+		<!--设置一根线
+			1px = 1 个像素点，和屏幕分辨率有关
+			% = 占网页的百分比，随框框大小变化
+		-->
+		<hr/> 
+		<hr width = '100px'/> 
+		<hr width = '100px' algin ='left'/>
+		<hr width = "50%" />
+
+		<!--段落（自动换行）不支持空格要加&nbsp-->
+
+		<p>&nbsp;&nbsp;&nbsp;&nbsp; name属性主要用于描述网页，与之对应的属性值为content，content中的内容主要是便于搜索引擎机器人查找信息和分类信息用的。</p> 
+		<p>&nbsp;&nbsp;&nbsp;&nbsp;name属性主要用于描述网页，与之对应的属性值为content，content中的内容主要是便于搜索引擎机器人查找信息和分类信息用的。</p>
+
+		<!-- span 标签没什么效果，也不能换行，但是最好讲文字放进标签里，这样可以更改样式
+			 div 标签是有换行功能的span。
+			 有什么用？ 所有可以换行的标签可以嵌套的,div可以嵌套任何标签
+			 嵌套之后，还是换行。
+			 span可以自己嵌套自己
+			 但是span不能嵌套可以换行的标签
+		-->
+		<span>hello world</span>
+		<span>hello world</span>
+		<div>hello world</div>
+		<div>hello world</div>
+		<div>
+			<div>
+				hello world
+				<span> ddd </span>
+			</div>		
+		</div>
+
+
+		<!-- 设置文字的标签 （虽然已经过时了）
+			font 设置文字的大小和颜色
+			不具备换行功能
+			<font color= 'aquamarine',size= '4'> 这时文字<font/>
+		-->
+		
+		<strong> 字体加粗标签</strong>
+		<b>字体加粗标签</b>
+		<i>字体倾斜标签</i>
+		<u>添加下划线标签</u>
+		<del>添加删除线</del>
+		<sup>上标</sup>
+		<sub>下标</sub>
+
+		<!--显示地址，略带倾斜效果-->
+
+		<address>北京西三旗</address>
+		<em>强调标签（稍微有点倾斜，但不是加粗）</em>
+		<pre>
+					在这里面
+
+			可以随意编辑
+
+					格式会直接显示在网页中
+					但是不推荐使用会影响到网页格局，造成混乱
+
+
+		</pre>
+
+		<big> 让字体稍微变大 </big>
+		<small>让字体稍微变小</small>
+       
+		
+	</body>
+	
+</html>

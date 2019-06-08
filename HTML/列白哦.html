@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<!--
+		表格的组成
+		1. 表格table 2.行tr 3.单元格 tr th
+		表格的属性
+		1. 设置边框线 border 边线 bordercolor 边框线的颜色
+		2. 设置单元格之间的间距 cellspacing
+		3. 设置边线的合并 style='border-collapse :collapse;'
+		表格的合并问题
+		1. 行合并： 下一行必须少一行 rowspan
+		2. 列合并： 单元格合并，合并一个少一个单元格 colspan
+		
+	-->
+	<body>
+		<table bgcolor ='aqua' style='border-collapse :collapse;' width= '80%' border = '1px' bordercolor ='red' cellspacing="0px">
+			<tr>
+				<th>姓名</th>
+				<th>联系方式</th>
+				<th>年龄</th>
+				<th>性别</th>
+			</tr>
+			<tr height = '50px'>
+				<td width='25%' align='center'><b>admin</b></td>
+				<td width='25%'>123456890</td>
+				<td width='25%'>18</td>
+				<td>男</td>
+				
+			</tr>
+			<tr>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+				
+			</tr>
+			
+		</table>
+		<br/>	
+		
+		<table algin = 'center' bgcolor ='aqua' style='border-collapse :collapse;' width= '80%' border = '1px' bordercolor ='red' cellspacing="0px">
+			<caption>我的表格标题</caption>
+			<tr>
+				<th>姓名</th>
+				<th>联系方式</th>
+				<th>年龄</th>
+				<th>性别</th>
+			</tr>
+			<tr height = '50px'>
+				<td width='25%' align='center'><b>admin</b></td>
+				<td width='25%'>123456890</td>
+				<td rowspan="2" width='25%'>18</td>
+				<td>男</td>
+				
+			</tr>
+			<tr>
+				<td width='25%' align='center'><b>admin</b></td>
+				<td width='25%'>123456890</td>
+				
+			</tr>
+			<tr>
+				<td colspan='4' align='right'>
+					上一页
+					下一页
+					首页
+					尾页
+				</td>
+				
+				
+			</tr>
+			
+		</table>
+	</body>
+</html>
